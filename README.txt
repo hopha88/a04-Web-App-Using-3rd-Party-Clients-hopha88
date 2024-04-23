@@ -11,4 +11,4 @@ In my client-side web application, I utilize these 3rd party APIs:
     
 to create an image of a 'dancing' cat that shares some wisdom. I take a couple random cat images from TheCatAPI, display a quote from forismatic, and let them dance to a song my friend made. :)
 
-My application is not nearly as complex as the example given in class, but I wanted to have a bit of simple fun. To use this application, you will need a TheCatAPI API key.
+My application is not nearly as complex as the example given in class, but I wanted to have a bit of simple fun. To use this application, you will need a TheCatAPI API key to put in the model.js file.
