@@ -11,7 +11,6 @@ export class CatDanceView {
 
     #render() {
         let cat_button = document.getElementById('cat_fetcher');
-        let cat = document.getElementById('cat_holder');
 
         var meow_mp3 = new Audio();
         meow_mp3.src = "meows.mp3"
@@ -30,13 +29,22 @@ export class CatDanceView {
 
         })
 
-        this.#model.addEventListener('cat_update', () => {
-
-        })
+        this.#model.addEventListener('cat_update', this.showCatPicture())
 
         this.#model.addEventListener('song_update', () => {
 
         })
+
+    }
+
+    async showCatPicture() {
+        this.hideAll();
+        let cat_holder = document.getElementById('cat_holder');
+
+        let cat_picture = await Cat.getCat();
+
+        cat_holder.src = cat_picture.imageURL;
+
 
     }
 }
