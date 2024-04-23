@@ -5,9 +5,11 @@ However, I feel as we progress in leaps and bounds towards development, I feel t
 Such is my mission today. 
 
 In my client-side web application, I utilize these 3rd party APIs:
-    1. TheCatAPI - https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=FJkYOq9tW
+    1. TheCatAPI - https://developers.thecatapi.com/
     2. Forismatic - https://forismatic.com/en/api/
     
     to create an image of a 'dancing' cat that shares some wisdom. I take a couple random cat images from TheCatAPI, display a quote from forismatic, and let them dance to a song my friend made. :)
 
-My application is not nearly as complex as the example given in class, but I wanted to have a bit of simple fun.
+My application is not nearly as complex as the example given in class, but I wanted to have a bit of simple fun. Also, the quotes kind of aren't that wise, but they're really jsut waht I had to work with. Enjoy!
+
+To use this application, you will need a TheCatAPI API key.
