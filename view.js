@@ -27,16 +27,32 @@ export class CatDanceView {
                 meow_mp3.currentTime = 0;
                 meow_mp3.play();
             }
+
+            // changing the cat image
             try {
-                let cat_picture = await this.#controller.getCat(); // Request cat picture from controller
+                let cat_picture = await this.#controller.getCat();
                 if (cat_picture) {
                     this.showCatPicture(cat_picture);
                 } else {
-                    console.error('Failed to fetch cat picture');
+                    console.error('Failed cat pic fetch sorry </3');
                 }
             } catch (error) {
                 console.error('Error fetching cat picture:', error);
             }
+
+            // changing the quote
+
+            try {
+                let quote = await this.#controller.getQuote();
+                if (quote) {
+                    this.showQuote(quote);
+                } else {
+                    console.error('Failed quote fetch sorry </3')
+                }
+            } catch (error) {
+                console.error('Error fetching quote: ', error);
+            }
+
         });
 
         this.#model.addEventListener('cat_update', (event) => {
@@ -44,8 +60,9 @@ export class CatDanceView {
             this.showCatPicture(cat_picture);
         });
 
-        this.#model.addEventListener('song_update', () => {
-            
+        this.#model.addEventListener('song_update', (event) => {
+            const quote = event.detail;
+            this.showQuote(quote);
                 });
 
     }
@@ -56,6 +73,13 @@ export class CatDanceView {
             cat_holder.src = cat_picture.imageURL;
         } else {
             console.error('Invalid cat data:', cat_picture);
+        }
+    }
+
+    showQuote(quote) {
+        let meaningful_quote = document.getElementById('meaningful_quote');
+        if (meaningful_quote && quote.quote_data) {
+            meaningful_quote.innerText = quote.quote_data;
         }
     }
 }

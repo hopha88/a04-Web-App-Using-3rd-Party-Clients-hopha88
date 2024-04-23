@@ -1,14 +1,13 @@
 In our modern society, the internet has become a very robust and useful place where you can find information on pretty much anything you want or need.
 
-However, I feel as we progress in leaps and bounds towards development, I feel the internet lacks something quite crucial... completely useless websites.
-In all our progress, we have forgotten our roots, 
+However, I feel as we progress in leaps and bounds towards development, I feel the internet has begun to lack something quite crucial... completely useless websites. No, I don't mean X (formerly Twitter). In all our progress, we have forgotten our roots. 
 
 Such is my mission today. 
 
-I use these 3rd party APIs:
+In my client-side web application, I utilize these 3rd party APIs:
     1. TheCatAPI - https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=FJkYOq9tW
-    2. 
+    2. Forismatic - https://forismatic.com/en/api/
     
-    to create my web application. I take a couple random cat images from TheCatAPI, then let them dance to a song from . :)
+    to create an image of a 'dancing' cat that shares some wisdom. I take a couple random cat images from TheCatAPI, display a quote from forismatic, and let them dance to a song my friend made. :)
 
 My application is not nearly as complex as the example given in class, but I wanted to have a bit of simple fun.
