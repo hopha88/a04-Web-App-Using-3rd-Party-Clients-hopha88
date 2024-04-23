@@ -1,6 +1,4 @@
-let catAPIKey = "live_FEpaxTIqQYLYkFuNxGhamlF3vyPHvNRrPnVHu708DL1d4mOdf7E5UB1guX1iikZL";
-
-let songAPIKey = "REPLACE";
+let catAPIKey = "REPLACE W/ YOUR API KEY";
 
 export class Cat {
     #data;
