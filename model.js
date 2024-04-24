@@ -1,4 +1,7 @@
-let catAPIKey = "live_FEpaxTIqQYLYkFuNxGhamlF3vyPHvNRrPnVHu708DL1d4mOdf7E5UB1guX1iikZL";
+
+// Get an API key from TheCatAPI and fill in this quotation.
+
+let catAPIKey = "YOUR API KEY HERE";
 
 export class Cat {
     #data;
